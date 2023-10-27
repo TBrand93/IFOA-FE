@@ -16,6 +16,10 @@ html, body:not(.nomargin) {
   }
 
 
+#headerlogo {
+    width: 35%;
+    padding: 40px;
+}
 
 header {
    
@@ -62,9 +66,9 @@ h1, h4, h3 {
     background-color: #e22d0e;
     color: white;
     margin: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 20px 40px;
 }
+
 
 p {
     font-family: 'Open Sans', sans-serif;
@@ -72,6 +76,7 @@ p {
     line-height: 1.65;
     color: #393d41;
 }
+
 
 article {
     border: 2px solid rgb(234, 233, 233);
@@ -114,14 +119,16 @@ footer {
  }
 
     
-#blue p, #rosso p {
+#blue p, #rosso p, footer p {
     color: white;
 }
 
 a:link {
     color: white;
+    font-family: 'Open Sans';
 }
 
 hr {
     width: 200px;
 }
+
