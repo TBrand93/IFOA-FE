@@ -48,7 +48,7 @@ button {
     font-family: 'Montserrat', bold;
 }
 
-h1, h4, h3:not(#redonwhite) {
+h1, h4, h3 {
     color: #25a2c3;
     font-family: 'Montserrat', bold;
     line-height: 1.5;
@@ -74,7 +74,7 @@ p {
 }
 
 article {
-    border: 2px solid rgb(192, 192, 192);
+    border: 2px solid rgb(234, 233, 233);
     border-radius: 10px;
     margin: 20px;
 }
@@ -103,9 +103,25 @@ footer {
     color: white;
     margin: auto;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
  /*??????.normagin????????????????*/
 
+
+ .onwhite {
+    color: aliceblue;
+ }
+
     
+#blue p, #rosso p {
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+hr {
+    width: 200px;
+}
