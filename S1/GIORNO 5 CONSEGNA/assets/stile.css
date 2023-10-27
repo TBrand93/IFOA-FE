@@ -116,6 +116,7 @@ footer {
 
  .onwhite {
     color: aliceblue;
+    padding: 0;
  }
 
     
@@ -131,4 +132,6 @@ a:link {
 hr {
     width: 200px;
 }
+
+
 
