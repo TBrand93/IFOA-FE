@@ -90,20 +90,21 @@ console.log(boundary(20));
  SCRIVI QUI LA TUA RISPOSTA        STARTsWITH /*
 
 /**/ 
-    const stringa1 = 'epicode è una scuola online';
+    
     
 
-    function epify(stringa1) {
-        if (stringa1.startsWith('epicode')) {
-            return stringa1;
+    function epify(stringa) {
+        if (stringa.startsWith('epicode')) {
+            return stringa;
         } else  {
-            return stringa1 + 'epicode';
+            return 'epicode' + stringa;
 
         }
     }
    
     epify();
-    console.log(epify(stringa1)); 
+    console.log('es.5');
+    console.log(epify('stringa prova')); 
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
