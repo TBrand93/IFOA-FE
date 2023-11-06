@@ -95,6 +95,10 @@ section {
    
 }
 
+#set4 p {
+    color: #045c68;
+    font-size: 0.7em;
+}
 
 
 #set4 img {
@@ -120,7 +124,7 @@ section {
 }
 
 .img2 figcaption, p {
-    font-size: 0.6em;
+    font-size: 0.9em;
     font-weight: bold;
     text-align: center;
     
