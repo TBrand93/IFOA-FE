@@ -23,6 +23,10 @@ Undefined: variabile non definita
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
+ let name ='ggg';
+
+  name = 'aaabbb';
+ console.log(name);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 //let myName = 'Thomas';
@@ -34,6 +38,16 @@ Undefined: variabile non definita
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
+
+let number1 = 12;
+let number2 = 20;
+
+let somma = number1 + number2;
+console.log(somma);
+
+
+
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 //let number1 = 12;
 //let number2 = 20;
@@ -48,6 +62,11 @@ Undefined: variabile non definita
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
+let x = 12;
+
+
+
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 //let x = 12;
 //console.log(x);
@@ -57,6 +76,11 @@ Undefined: variabile non definita
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
+
+
+
+
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 //myName = Brand;
 //console.log(myName);
@@ -72,7 +96,7 @@ Undefined: variabile non definita
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 //document.getElementById('sottrazione').innerHTML = 4-x;
-console.log(4-x);
+
 
 let y = 4;
 console.log(y-x);
@@ -92,19 +116,14 @@ console.log(nuovaSottrazione);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let name1 ='john';
-let name2 ='John';
-let verifica = name1 === name2;
-console.log(verifica);
-//
-console.log('i due nomi sono uguali?', name1 === name2);
-console.log('i due nomi sono uguali?' + (name1 ===name2));
-//
-//document.getElementById('name1').innerHTML = name1;
-//document.getElementById('name2').innerHTML = name2;
-name1 !== name2;
-console.log(name1 !== name2);
+/*let name1= 'john';
+let name2 = 'John';
+let verifica = name1 == name2;
 
-let altraVerifica = name1.toLowerCase() === name2.toLowerCase();
-console.log('nomi uguali con lowercase', altraVerifica);
+ console.log(verifica);
+
+ let altraVerifica = name1.toLowerCase() === name2.toLowerCase();
+
+ console.log(altraVerifica);*/
+
 
