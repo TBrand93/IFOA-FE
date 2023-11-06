@@ -1,1 +1,153 @@
 /* Your styles here */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9edee;
+    width: 100vw;
+  }
+
+.banner{
+    background-color: #222f3f;
+    margin: 0px;
+    
+    
+}
+
+
+#logo1 {
+    width: 10%;
+    
+}
+
+nav {
+    background-color: #364759;
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    width: 100%;
+    font-size: 60%;
+    color: white;
+
+}
+
+
+ul li {
+    lis-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+
+main {
+    margin: 20px;
+    width: 100vw;
+}
+
+section {
+    text-align: center;
+    color: white;
+    width: 100%;
+    
+}
+
+#section1 {
+    background-color: #f56600;
+    font-size: 0.6em;
+    margin: 10px;
+    padding: 1px;
+    width: 95vw;
+}
+
+#section2 {
+    background-image: url(../images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: 95vw;
+    height: 5em;
+    margin:10px;
+}
+
+
+
+#section2 h2 {
+    font-size:1em ;
+    padding-top: 45px;
+    
+}
+
+#section2 p {
+    font-size: 0.5em;
+    
+}
+
+#set4 {
+    background-color: white;
+    margin: 10px;
+    padding: 1px;
+    width: 95vw;
+   
+}
+
+#set4 img {
+    
+    width: 22%;
+    height: 20vw;
+    margin: 15px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    border: none;
+    box-shadow:  2px 5px rgb(214, 214, 214);
+    
+}
+
+.img2 {
+    margin: 10px;
+    
+}
+ 
+.img2 img {
+    width: 95vw;
+    
+}
+
+.img2 figcaption, p {
+    font-size: 0.6em;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.img2 p {
+    color: #2b7a87;
+}
+
+
+aside {
+    background-color: #364759;
+    margin-bottom: 0px;
+   padding: 0px;
+    text-align: center;
+    font-size: 60%;
+    color: white;
+    
+}
+
+footer {
+    background-color: #222f3f;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 30px;
+}
+
+a  {
+    color: white;
+
+} 
