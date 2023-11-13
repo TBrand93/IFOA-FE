@@ -85,8 +85,8 @@ console.log(me.skills);
 console.log('***ES. 1***');
 
 
-function dice(min, max) {
-  return Math.floor(Math.random() * (7 - 1 )+1 );
+function dice() {
+  return Math.floor(Math.random() * 6) +1;
 }
 
 console.log(dice());
@@ -142,7 +142,7 @@ console.log(deleteOne('Oggi è martedì', false));
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
-console.log('***ES. 5***');
+
 
 
 ///console.log(onlyLetters('Oggi è il 13 novembre 2023'));
@@ -150,14 +150,7 @@ console.log('***ES. 5***');
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
-console.log('***ES. 6***');
 
-/*function isThisAnEmail(email) {
-if (email.contains('@') && email.constains())
-}
-
-console.log(isThisAnEmail('thomas@brand.mail'));
-*/
 
 
 /* ESERCIZIO 7
@@ -187,14 +180,13 @@ console.log(whatDayIsIt());
       values: [3, 3, 4]
   }
 */
-console.log('***ES. 8***');
 
 
 
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
-console.log('***ES. 9***');
+
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
@@ -433,7 +425,7 @@ console.log(sumAllTheYears(movies));
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
-console.log('***ES. 17***');
+
 
 
 
@@ -442,50 +434,42 @@ console.log('***ES. 17***');
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 
 
-console.log('***ES. 18***');
 
-function searchAndDivide() {
-  const match = [];
-  const unmatch = [];
- const titoli = movies.Title;
 
-  for (let i = 0; i < movies.length; i++) {
-  if (titoli.includes('lord')) {
-    return match.push(titoli);
-  } else return unmatch.push(titoli);
-}
-}
 
-console.log(searchAndDivide());
-
-*/
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
-console.log('***ES. 18***');
+console.log('***ES. 19***');
 function removeIndex() {
  delete movies[2]
  return movies;
 }
 
 console.log(removeIndex());
+
+
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
-
+console.log('***ES. 20***');
+function selectEl() {
 document.getElementById('container');
+}
+console.log(selectEl);
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
-
+console.log('***ES. 21***');
 function select() {
   document.querySelectorAll('td');
 }
+console.log(select);
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
@@ -495,7 +479,7 @@ function select() {
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
-
+console.log('***ES. 23***');
 const red = function () {
 	const liste = document.querySelectorAll('a');
 	liste.forEach((element) => {
@@ -509,7 +493,7 @@ red();
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
-
+console.log('***ES. 24***');
 const addElement = function () {
 	const primaLista = document.getElementById('myList');
 	const nuovoItem = document.createElement('li');
@@ -523,22 +507,13 @@ addElement();
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
-/*const removeList = function() {
-  const lista = document.querySelector('li');
-  lista.parentElement.removeChild('li');
-}
 
-removeList(); */
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
-/*const addClass = function() {
-  const newClass = document.querySelectorAll('td')
-  class.classList.add("test");
-}
-addClass();*/
+
 
 // [EXTRA] JS Avanzato
 
@@ -551,8 +526,9 @@ addClass();*/
   *
   **
   ***
-
 */
+
+
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
@@ -569,13 +545,5 @@ addClass();*/
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
-console.log('***ES. 29***');
 
 
-function isItPrime(number) {
-if (number / 2 === 0 && number){
-return true;
-} else return false;
-}
-
-console.log(isItPrime(6));
