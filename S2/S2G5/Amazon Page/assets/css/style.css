@@ -13,6 +13,7 @@ html, body {
 .banner{
     background-color: #222f3f;
     margin: 0px;
+    width: 100vw;
     
     
 }
@@ -48,6 +49,7 @@ ul {
 
 main {
     margin: 20px;
+    
     width: 100%;
 }
 
