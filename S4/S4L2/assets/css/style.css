@@ -457,10 +457,10 @@ footer a {
     float: right;
     position: relative;
     right: 150px;
-    top: -30px;
+    top: -50px;
     opacity: 0.5;
     width: 50%;
-    z-index: 0;
+    z-index: 1;
     
   }
   #news {
@@ -489,8 +489,8 @@ footer a {
   #underlined {
     float: right;
     position: relative;
-    right: 200px;
-    top: -70px;
+    right: 250px;
+    top: -60px;
     z-index: 0;
     width: 70%;
     opacity: 0.5;
@@ -512,13 +512,14 @@ footer a {
 
   h1 {
     font-size: 2.5em;
+    position: static;
     z-index: 1; /*????*/
   }
   
   #underlined {
     float: right;
     position: relative;
-    top: -30px;
+    top: -40px;
     right: 30px;
     z-index: 3; /*????*/
     opacity: 0.5;
