@@ -31,3 +31,19 @@ img {
 h2 {
     margin-top: 40px;
 }
+
+
+
+@media screen and (max-width: 320px) {
+   
+    .descrizione {
+        margin-left: 20px;
+    }
+    .article{
+       width: 95vw;
+        flex-direction: column-reverse;
+       
+    };
+
+    
+};
