@@ -17,6 +17,7 @@ header {
     border-bottom: 1px solid black;
     position: sticky;
     top:0px;
+    z-index: 1;
   }
 
   header img, ul {
@@ -53,7 +54,7 @@ header {
   }
 
   #intestazione {
-    padding: 95px 150px;
+   padding: 95px 150px;
     border-bottom: 1px solid black;
     
   }
@@ -84,6 +85,136 @@ font-size: 1.2em;
 #m {
     position: absolute;
     right: 0px;
+    z-index: 0;
 
 }
 
+ /*TRENDING*/
+
+ #medium {
+    font-size: 1em;
+    font-weight: 400;
+    margin-left: 150px;
+ }
+
+
+.trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    
+  }
+  
+  .news {
+    
+    margin: 15px 100px;
+    max-width: 250px;
+    max-height: 100px; 
+
+  }
+
+  .news .number {
+    opacity: 50%;
+    font-size: 2em;
+  }
+
+  
+
+  .news h2 {
+    font-size: 1em;
+    margin-bottom: 2px;
+  }
+
+  .news h4, .testo h4 {
+    font-size: 0.7em;
+    margin-bottom: 2px;
+   
+  }
+
+  .news span, .testo span {
+    font-size: 0.7em;
+  }
+
+  .news img {
+    border-radius: 5px;
+    width: 17px;
+  }
+
+  .news h4, .news img {
+    display: inline;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+
+   }
+
+   
+  
+  .articoli {
+  width: 680px;
+  height: 100px;
+  margin: 30px 20px 20px 200px;
+  display: flex;
+  flex-direction: row;
+  
+  
+ 
+  }
+  
+  .articoli img {
+    
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
+    float: right;
+    align-items:flex-end ;
+    
+  }
+  
+
+  .testo h2{
+    font-size: 1.2em;
+    margin: 5px;
+  }
+  .testo h3{
+    color: gray;
+    font-weight: 200;
+    font-size: 0.9em;
+  }
+ 
+  
+
+#side {
+    font-size: 1em;
+}
+  
+
+
+
+  .sidebar {
+   
+    position: sticky;
+    top:150px;
+   margin-left: 100px;
+   width: 450px;
+   max-height: 500px;
+    
+  }
+  
+  
+  .sidebar button, footer button {
+    background-color: #ffffff;
+    border: 1px  solid rgb(182, 182, 182);
+    position: fixed;
+    color: black;
+    position: sticky;
+    top:100px;
+    max-width: 200px;
+    max-height: 50px;
+    margin: 10px;
+    
+  }
