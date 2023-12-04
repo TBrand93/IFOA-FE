@@ -1,0 +1,6 @@
+@mixin animate($durata, $start, $end, $delay: 0, $name: from-top) {
+    $uniqueName: animate-#{$name}-#{$unique-id()};
+
+
+    
+}
