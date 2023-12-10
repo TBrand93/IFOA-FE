@@ -46,6 +46,8 @@ function createCards(data) {
         
         faveBtn.innerText = '<3';
         
+
+        let basket = document.getElementById('basket');
         
         
         
@@ -65,6 +67,8 @@ function createCards(data) {
         card.appendChild(cardBody);
         row.appendChild(card);
 
+
+
         document.querySelector('#selection').appendChild(card);
         
 
@@ -72,7 +76,25 @@ function createCards(data) {
 
         deleteBtn.addEventListener('click', function() {
             document.querySelector('#selection').removeChild(card);
-        })
+        });
+
+            //cart
+
+        const cart = [];
+        
+        
+
+        addCartBtn.addEventListener('click', function() {
+
+            cart.push('-' + book.title + ' €'+ book.price);
+            localStorage.setItem('cartStorage', JSON.stringify(cart));
+            basket.innerText = cart;
+
+            console.log(cart);
+            
+            
+        } )
+
 
 
     });
@@ -80,3 +102,4 @@ function createCards(data) {
 }
 
 createCards();
+
