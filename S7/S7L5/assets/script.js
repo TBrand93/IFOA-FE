@@ -18,7 +18,7 @@ fetch(url,  {
 
 
 function createCards(data) {
-    data.forEach(function(data) {
+    data.forEach(data => {
         let col = document.createElement('div');
         col.classList.add('col');
         let card = document.createElement('div');
@@ -41,12 +41,22 @@ function createCards(data) {
     
         /*buttons */
         let viewBtn = document.createElement('button');
-        viewBtn.classList.add('btn', 'btn-info'); 
+        viewBtn.classList.add('btn', 'btn-info', 'm-1'); 
         viewBtn.innerText = 'Scopri di più';
+        //funzione bottone
+        viewBtn.addEventListener('click', function () {
+        window.location.href = './dettagli.html'
+            })
 
         let editBtn = document.createElement('button');
         editBtn.classList.add('btn', 'btn-warning'); 
         editBtn.innerText = 'Modifica';
+        //funzione bottone
+        editBtn.addEventListener('click', function () {
+        window.location.href = './edit.html'
+        }) 
+
+
 
             /*APPEND CHILD */
 
@@ -61,14 +71,7 @@ function createCards(data) {
         card.appendChild(cardBody);
         row.appendChild(card);
 
-       
-
-
-
-        
-
     
-
         
     });
 }
@@ -81,7 +84,15 @@ function createCards(data) {
 
 /* FUNZIONI PAGINA BACK OFFICE */
 
-const productNew = [];
+
+    const nome = document.getElementById('nome').value;
+    const brand = document.getElementById('brand').value;
+    const prezzo = document.getElementById('prezzo').value;
+    const urlImmagine = document.getElementById('urlImmagine').value;
+    const descrizione = document.getElementById('descrizione').value;
+
+
+
 
 /*bottoni */
 
@@ -91,71 +102,78 @@ const btnNew = document.getElementById('btnNew');
 /* input */
 
 
-
-function newCards(){
-
-    let nome = document.getElementById('nome').value;
-    let brand = document.getElementById('brand').value;
-    let prezzo = document.getElementById('prezzo').value;
-    let urlImmagine = document.getElementById('urlImmagine').value;
-    let descrizione = document.getElementById('descrizione').value;
-
-
-    post();
-    
-    
+function reset() {
+ nome = '';
+ brand = '';
+ prezzo = '';
+ urlImmagine = '';
+ descrizione = '';
 }
 
+//funzione salva nuovi prodotti
 
 
-newCards(nome, descrizione, brand, urlImmagine, prezzo);
+
+const productNew = [];
+
+btnNew.addEventListener('click', function (){
+
+    
+    
 
 
-function post (nome, descrizione, brand, urlImmagine, prezzo) {
+    
+    
+   
+    localStorage.setItem('nuovoProdotto', JSON.stringify(productNew));
+    productNew.push(nome, brand, prezzo, urlImmagine, descrizione);
+
+    console.log(localStorage.nuovoProdotto);
+    //post();
+    
+    
+});
+
+
+
+/*function post (nome, descrizione, brand, urlImmagine, prezzo) {
     fetch(url, {
-        method: 'POST',
-        headers: {
-            Authorization: key,
-            Accept: "application/json",
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    'name': nome,
-                    'description': descrizione,
-                    'brand': brand,
-                    'imageUrl': urlImmagine,
-                    'price': prezzo
-                })
+       method: 'POST',
+       headers: {
+           Authorization: key,
+           Accept: "application/json",
+                   "Content-Type": "application/json",
+               },
+               body: JSON.stringify({
+                   'name': nome,
+                   'description': descrizione,
+                   'brand': brand,
+                   'imageUrl': urlImmagine,
+                   'price': prezzo
+               })
 
- }) .then((response) => response.json())
-    .then(data => {newCards(data)})
+       }) .then((response) => response.json())
+        .then(data => {newCards(data)})
+
+
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
 /* FUNZIONI PAGINA EDIT */
 
 
-const btnDelete = document.getElementById('btnDelete');
+
+
 const btnModify = document.getElementById('btnModify');
 
 
 
 
+
+/*funzione pagina dettagli */
 
 
