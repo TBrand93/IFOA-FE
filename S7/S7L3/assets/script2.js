@@ -102,4 +102,3 @@ function createCards(data) {
 }
 
 createCards();
-
