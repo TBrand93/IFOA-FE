@@ -158,23 +158,17 @@ font-size: 1.2em;
   
   .articoli {
   width: 680px;
-  height: 100px;
+  height: 120px;
   margin: 30px 20px 20px 200px;
   display: flex;
   flex-direction: row;
-  
-  
- 
+  position: relative;
   }
   
   .articoli img {
-    
-    width: 250px;
     height: 100px;
-    object-fit: contain;
-    float: right;
-    align-items:flex-end ;
-    
+   position: absolute;
+   right: 0;
   }
   
 
@@ -188,7 +182,10 @@ font-size: 1.2em;
     font-size: 0.9em;
   }
  
-  
+  .testo {
+    width: 530px;
+    overflow-y: hidden;
+    } 
 
 #side {
     font-size: 1em;

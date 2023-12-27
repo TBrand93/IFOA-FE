@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    font-size: 1.2em;
+    margin: auto;
+    text-align: left;
+   
+  }
+
+  .bg-celeste {
+    background-color: #98b9c6;
+  }
+
+  .text-orange {
+    background-color: #f7661c;
+  }
+
+  .text-blue {
+    background-color: #6194a8;
+  }
+
+ 

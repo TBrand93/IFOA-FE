@@ -1,0 +1,93 @@
+body {
+    width: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .start {
+    position: absolute;
+    top: 5px;
+    right: 40%;
+    background-color: green;
+    color: white;
+  }
+  .stop {
+    position: absolute;
+    top: 5px;
+    right: 60%;
+    background-color: green;
+    color: white;
+  }
+  
+  .gatto {
+    position: absolute;
+    top:-150px;
+    padding: 80px;
+  }
+
+  .welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: fade 2s;
+  }
+  
+  .punti {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .number {
+    font-weight:900;
+    font-size: 26px;
+  }
+
+  @keyframes fade {
+    0% {display: block;}
+    100% {display: none;}
+  }
+
+  #cryingCat {
+    position: fixed;
+    bottom: 0px;
+    left: 40vw;
+    margin: 0 auto;
+    height: 200px;
+    
+  }
+
+  .middle {
+    margin: 0 auto;
+  }
+
+
+
+  @keyframes myAnimation{
+    0%{
+      opacity: 1;
+      
+    }
+    50%{
+      opacity: 0.2;
+      
+    }
+    100%{
+      display: none;
+      opacity: 0;
+      
+    }
+  }
+  
+  .gattoFaded{
+      animation-name: myAnimation;
+      animation-duration: 2000ms;
+      animation-fill-mode: forwards;
+  }
+
+ .gattoDefault {
+  opacity: 1;
+ }

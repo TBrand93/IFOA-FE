@@ -19,13 +19,16 @@ nav {
     height: 100px;
     border-radius: 50px ;
     margin: 0 auto;
+    
 }
 
 .navigation, .btnShop{
     background-color: #F3DF85;
     padding: 10px;
     border-radius: 25px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
@@ -181,7 +184,7 @@ h3 {
     }
 
     .sidebar {
-    justify-content: left;
+    justify-content: center;
     }
 
    nav {
@@ -195,11 +198,11 @@ h3 {
     
    }
 
-   .navigation, .btnShop {
+   nav .navigation, nav .btnShop {
     width: 12vw;
     height: 70px;
     border-radius: 50px;
-    justify-content: center; /*ma alloraaaaaaaaaaa*/
+    justify-content: center; 
     margin-top: 20px;
     
     
